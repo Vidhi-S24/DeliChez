@@ -1,0 +1,35 @@
+/* .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    background-color: #ecdddd;
+}
+.navbar .logo{
+    width: max(10%,80px);
+}
+.navbar .profile{
+    width: 40px;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    background-color: #ecdddd;
+}
+
+.navbar .logo {
+    width: max(10%, 80px);
+}
+
+.navbar .profile {
+    width: 32px; 
+    height: 32px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 2px solid black; 
+}
+
+

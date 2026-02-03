@@ -1,0 +1,131 @@
+.add{
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+.add form{
+    gap: 20px;
+}
+.add-img-upload img{
+    width: 120px;
+    cursor: pointer;
+}
+.add-product-name, .add-product-description{
+    width: max(40%, 280px);
+}
+.add-product-name input, .add-product-description textarea{
+    padding: 10px;
+}
+.add-category-price{
+    display: flex;
+    gap: 30px;
+}
+.add-category-price select, .add-category-price input{
+    max-width: 120px;
+    pad: 10px;
+}
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* .add {
+    width: 70%;
+    margin: 50px auto 0 auto; 
+    color: #333;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-img-upload img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px dashed #ccc;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.add-img-upload img:hover {
+    transform: scale(1.05);
+}
+
+.add-product-name,
+.add-product-description {
+    width: 100%;
+    max-width: 500px;
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.add-category-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.add-category-price select,
+.add-category-price input {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+.add-category-price select:focus,
+.add-category-price input:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.add-btn {
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.add-btn:hover {
+    background-color: #333;
+} */
