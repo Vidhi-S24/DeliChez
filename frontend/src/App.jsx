@@ -6,7 +6,8 @@ import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
-import Payment from './pages/Payment/payment'
+import Payment from "./pages/Payment/Payment";
+
 
 const NotFound = () => <h2>404 - Page Not Found</h2>
 
