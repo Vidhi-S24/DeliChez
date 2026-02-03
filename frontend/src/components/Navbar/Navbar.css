@@ -1,0 +1,264 @@
+.navbar {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecdddd;
+  flex-wrap: wrap;
+  min-height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.navbar a {
+  cursor: pointer;
+  color: black;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar button {
+  background-color: #B9375D;
+  border: none;
+  border-radius: 40px;
+  color: #ecdddd;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #ad4b68;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: green;
+  border-radius: 5px;
+  top: -5px;
+  right: -5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.mobile-menu-overlay.open {
+  display: flex;
+}
+
+.mobile-menu {
+  background-color: #ecdddd;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  animation: slideInRight 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.mobile-menu .active {
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+
+.close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.mobile-top-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-profile img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-profile-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-profile-dropdown li img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+}
+
+/* .navbar-search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.navbar-search-input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ad4b68;
+  border-radius: 4px;
+  outline: none;
+  width: 160px;
+} */
+
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 903px) {
+  .navbar-menu {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu ul {
+    align-items: center;
+  }
+}
+
+@media (max-width: 475px) {
+
+  .navbar-right img,
+  .navbar-right button {
+    display: none;
+  }
+
+  .mobile-top-items {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: green;
+    border-radius: 5px;
+    top: -5px;
+    right: -5px;
+  }
+
+  .mobile-menu ul {
+    align-items: center;
+  }
+
+}

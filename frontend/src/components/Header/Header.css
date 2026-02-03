@@ -1,0 +1,145 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 35px;
+  background: linear-gradient(to bottom, #ecdddd, #dc8c8c);
+  border-radius: 30px;
+  gap: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header-left {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  animation: fadeIn 3s;
+}
+
+.header-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #B9375D;
+}
+
+.header-left p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* .header-left button {
+  background-color: #B9375D;
+  border: none;
+  border-radius: 40px;
+  color: #ecdddd;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.header-left button:hover {
+  background-color: #ad4b68;
+} */
+
+.header-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-right img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+@media (max-width: 346px) {
+  .header {
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .header-left,
+  .header-right {
+    flex: 1 1 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .header-left h2 {
+    font-size: 2rem;
+  }
+
+  .header-left p {
+    font-size: 1rem;
+  }
+
+  /* .header-left button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  } */
+
+
+  .header-right img {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+
+}
+
+@media (max-width: 725px) {
+  .header-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-left p {
+    font-size: 1rem;
+  }
+
+  /* .header-left button {
+    font-size: 0.7rem;
+    padding: 10px 20px;
+  } */
+}
+.tagline {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #044618;
+  animation: pulseGlow 3s ease-in-out infinite;
+  /* text-shadow: 0 0 5px #908cdc; */
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #18a141;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    /* text-shadow:
+      0 0 10px #908cdc,
+      0 0 20px #7570da,
+      0 0 30px #3b33d3; */
+    opacity: 0.85;
+  }
+}
