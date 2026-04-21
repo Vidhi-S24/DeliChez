@@ -23,7 +23,7 @@ import bag_icon from './bag_icon.svg'
 import logout_icon from './logout_icon.svg'
 import success_icon from './success_icon.svg'
 
-import Starter_1 from '../assets/Starter_1.jpg'
+import Starter_1 from './Starter_1.jpg'
 import Starter_2 from './Starter_2.jpg'
 import Starter_3 from './Starter_3.jpg'
 import Starter_4 from './Starter_4.jpg'
