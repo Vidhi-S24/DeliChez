@@ -1,14 +1,13 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-// export const connectDB=async()=>{
-//     (await mongoose.connect('mongodb+srv://vidhisoni:dbvidhi24@cluster0.fymtxeb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')).then(()=>console.log("DB connected"));
-// }
+dotenv.config();
 
 export const connectDB = async () => {
-    try {
-        await mongoose.connect('mongodb+srv://vidhisoni:dbvidhi24@cluster0.fymtxeb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
-        console.log("DB connected");
-    } catch (error) {
-        console.error("DB connection failed:", error);
-    }
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log(" DB Connected");
+  } catch (err) {
+    console.log(" DB connection failed:", err.message);
+  }
 };
